@@ -24,17 +24,41 @@ namespace Consoleapp
             Ram = ram;
             Disk = disk;
         }
-      
+
 
         public override string ToString()
         {
             return $"Cno: {Cno}, Brand: {Brand}, CPU: {Cpu}, RAM: {Ram}GB, Disk: {Disk}GB";
         }
-     
 
         public void Show()
         {
             Console.WriteLine(this.ToString());
+        }
+
+        public void setField(string brand, string cpu, int ram, int disk)
+        {
+            Brand = brand;
+            Cpu = cpu;
+            Ram = ram;
+            Disk = disk;
+        }
+
+        public void setField(string brand, string cpu)
+        {
+            Brand = brand;
+            Cpu = cpu;
+        }
+
+        public void setField(int ram, int disk)
+        {
+            Ram = ram;
+            Disk = disk;
+        }   
+        
+        public void setField(string brand)
+        {
+            Brand = brand;
         }
     }
 }

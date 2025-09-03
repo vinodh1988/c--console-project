@@ -13,6 +13,16 @@ foreach (Computer comp in computers)
     //comp.Show();
     Console.WriteLine(comp);
 }
+
+computers[0].setField("Acer", "I7");
+computers[2].setField(32, 2048);
+computers[4].setField("Microsoft");
+
+foreach (Computer comp in computers)
+{
+    //comp.Show();
+    Console.WriteLine(comp);
+}
 /*
 Console.WriteLine("Hello, World!");
 Console.WriteLine(First.Greet("John"));
