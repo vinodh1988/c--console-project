@@ -24,11 +24,13 @@ namespace Consoleapp
             Ram = ram;
             Disk = disk;
         }
+      
 
         public override string ToString()
         {
             return $"Cno: {Cno}, Brand: {Brand}, CPU: {Cpu}, RAM: {Ram}GB, Disk: {Disk}GB";
         }
+     
 
         public void Show()
         {

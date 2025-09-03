@@ -12,3 +12,4 @@ D:\fullstack-course\consoleapp\obj\Debug\net8.0\refint\consoleapp.dll
 D:\fullstack-course\consoleapp\obj\Debug\net8.0\consoleapp.pdb
 D:\fullstack-course\consoleapp\obj\Debug\net8.0\consoleapp.genruntimeconfig.cache
 D:\fullstack-course\consoleapp\obj\Debug\net8.0\ref\consoleapp.dll
+D:\fullstack-course\consoleapp\obj\Debug\net8.0\consoleapp.sourcelink.json
