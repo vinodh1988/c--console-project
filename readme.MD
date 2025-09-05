@@ -85,3 +85,72 @@ public class Calculator
 ```
 
 In the example above, the `Add` method is overloaded with different parameter types and counts.
+
+## Types of Variables in C#
+
+Variables in C# are used to store data. They are categorized based on their data type and scope.
+
+### 1. Based on Data Type
+
+- **Value Types**: Store actual data. Examples include `int`, `float`, `double`, `char`, `bool`, `struct`, and `enum`.
+- **Reference Types**: Store references to the actual data. Examples include `string`, `class`, `interface`, `delegate`, and arrays.
+
+| Type           | Example           | Description                                  |
+|----------------|-------------------|----------------------------------------------|
+| `int`          | `int age = 25;`   | 32-bit integer                               |
+| `double`       | `double price = 9.99;` | 64-bit floating-point number           |
+| `char`         | `char grade = 'A';` | Single Unicode character                  |
+| `bool`         | `bool isActive = true;` | Boolean value (true/false)             |
+| `string`       | `string name = "Alice";` | Sequence of characters                 |
+| `object`       | `object obj = new Object();` | Base type for all data types      |
+
+### 2. Based on Scope
+
+- **Local Variables**: Declared inside methods and accessible only within that method.
+- **Instance Variables (Fields)**: Declared inside a class but outside any method. Each object has its own copy.
+- **Static Variables**: Declared with the `static` keyword. Shared among all instances of a class.
+- **Constant Variables**: Declared with the `const` keyword. Value cannot be changed after initialization.
+- **Read-only Variables**: Declared with the `readonly` keyword. Value can be assigned only during declaration or in the constructor.
+
+### Example
+
+```csharp
+public class Person
+{
+    // Instance variable
+    public string Name;
+
+    // Static variable
+    public static int Population;
+
+    // Constant variable
+    public const double Pi = 3.14159;
+
+    // Read-only variable
+    public readonly DateTime BirthDate;
+
+    public void Display()
+    {
+        // Local variable
+        int age = 30;
+        Console.WriteLine($"Name: {Name}, Age: {age}");
+    }
+
+    public Person(DateTime birthDate)
+    {
+        BirthDate = birthDate;
+    }
+}
+```
+
+### Notes
+
+- Local variables must be initialized before use.
+- Instance and static variables get default values if not explicitly initialized.
+- Constants must be assigned at declaration.
+- Read-only variables can be assigned in the constructor.
+
+### static method rules
+
+* a static method can access only static variables and non static members cannot be accessed
+* a non static method can access both static members as well as non static members

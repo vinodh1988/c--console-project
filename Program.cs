@@ -1,4 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using Consoleapp;
+Container container1 = new Container();//(Id ,name.localCount) count 1  localCount 1
+Container container2 = new Container();//(Id ,name,localCount) count 2  localCount 1
+
+Container.DisplayCount();
+Container container3 = new Container();//(Id ,name,localCount) count 3  localCount 1
+
+container1.Show();
+container2.Show();
+container3.Show();
+
+Container.DisplayCount();//static method can be called using class name
+container1.DisplayLocalCount();
+container2.DisplayLocalCount();
+container3.DisplayLocalCount();
+/*
 using Consoleapp;
 
 Computer[] computers = new Computer[5];
@@ -23,7 +40,7 @@ foreach (Computer comp in computers)
     //comp.Show();
     Console.WriteLine(comp);
 }
-/*
+
 Console.WriteLine("Hello, World!");
 Console.WriteLine(First.Greet("John"));
 
