@@ -1,6 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Consoleapp;
+
+Child child = new Child();
+child.DataA = "Hello";
+child.DataB = "World";
+child.Show(); // Calls Child's Show method
+child.Display(); // Calls Child's Display method
+Child child1 = new Child("ValueA", "ValueB");
+child1.Show(); // Calls Child's Show method
+child1.Display(); // Calls Child's Display method
+
+/*
+
 Container container1 = new Container();//(Id ,name.localCount) count 1  localCount 1
 Container container2 = new Container();//(Id ,name,localCount) count 2  localCount 1
 
