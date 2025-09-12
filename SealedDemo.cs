@@ -19,7 +19,7 @@ namespace Consoleapp
 
     class B : A
     {
-        public override void Show()
+        public sealed override void Show()
         {
             Console.WriteLine("This is an overridden method in Second class.");
         }
@@ -36,13 +36,13 @@ namespace Consoleapp
         }
     }
 
-    class C : B
+    sealed class C : B
     {
         // This will cause a compile-time error because Show is sealed in class B
-        public override void Show()
-         {
-            Console.WriteLine("This is an attempt to override a sealed method in Third class.");
-         }
+        /* public override void Show()
+          {
+             Console.WriteLine("This is an attempt to override a sealed method in Third class.");
+          }*/
 
         public new void Display()
         {
@@ -54,5 +54,10 @@ namespace Consoleapp
             Console.WriteLine("This is an overridden method in Third class.");
         }
     } 
+    /*
+    class D : C
+    {
+        // This will cause a compile-time error because class C is sealed
+    }*/
         
 }
