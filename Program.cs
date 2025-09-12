@@ -2,6 +2,18 @@
 
 using Consoleapp;
 
+A obj = new C();
+obj.Show(); // Calls the overridden Show method in class c
+obj.Display(); // Calls the Display method in class A it is not overridden in B or C
+obj.Print(); // Calls the overridden Print method in class C
+
+A obj1 = new B();
+obj1.Show(); // Calls the overridden Show method in class B
+obj1.Display(); // Calls the Display method in class A it is not overridden in B
+obj1.Print(); // Calls the overridden Print method in class B
+/*
+using Consoleapp;
+
 Original original = new Extension(5, 10);
 // for a super class reference variable can hold the object of sub class
 // but for a sub class reference variable cannot hold the object of super class
