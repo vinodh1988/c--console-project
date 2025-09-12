@@ -7,7 +7,8 @@ Original original = new Extension(5, 10);
 // but for a sub class reference variable cannot hold the object of super class
 // using this reference variable we can access only the members of super class
 // and overridden members of sub class
-original.Show(); // Calls Original's Show method , since it is not overridden in Extension
+original.Show(); //now calls B show because it is overridden in Extension class
+// before Calls Original's Show method , since it is not overridden in Extension
 original.Display();
 //original.DisplayExtension(); // This line would cause a compile-time error
 /*

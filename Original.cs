@@ -20,7 +20,7 @@ namespace Consoleapp
             a = value;
         }
 
-        public void Show()
+        public virtual void Show()
         {
             Console.WriteLine($"a = {a}");
         }

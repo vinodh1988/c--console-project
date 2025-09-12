@@ -20,7 +20,7 @@ namespace Consoleapp
             b = bValue;
         }
 
-        public new void Show()
+        public override void Show()
         {
       
             Console.WriteLine($"b = {b}");
