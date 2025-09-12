@@ -22,7 +22,7 @@ namespace Consoleapp
 
         public override void Show()
         {
-      
+            base.Show(); // Call Original's Show method
             Console.WriteLine($"b = {b}");
         }
 
