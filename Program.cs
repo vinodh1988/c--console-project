@@ -2,6 +2,17 @@
 
 using Consoleapp;
 
+Original original = new Extension(5, 10);
+// for a super class reference variable can hold the object of sub class
+// but for a sub class reference variable cannot hold the object of super class
+// using this reference variable we can access only the members of super class
+// and overridden members of sub class
+original.Show(); // Calls Original's Show method , since it is not overridden in Extension
+original.Display();
+//original.DisplayExtension(); // This line would cause a compile-time error
+/*
+using Consoleapp;
+
 Child child = new Child();
 child.DataA = "Hello";
 child.DataB = "World";
@@ -10,7 +21,7 @@ child.Display(); // Calls Child's Display method
 Child child1 = new Child("ValueA", "ValueB");
 child1.Show(); // Calls Child's Show method
 child1.Display(); // Calls Child's Display method
-
+*/
 /*
 
 Container container1 = new Container();//(Id ,name.localCount) count 1  localCount 1
