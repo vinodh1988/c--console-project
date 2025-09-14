@@ -1,7 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Consoleapp;
+using ConsoleApp;
 
+Shape s = new Rectangle("MyRectangle", 5, 10);
+s.Show();
+s.Area();
+s.Perimeter();
+
+s = new Square("MySquare", 4);
+s.Show();
+s.Area();
+s.Perimeter();
+/*
 A obj = new C();
 obj.Show(); // Calls the overridden Show method in class c
 obj.Display(); // Calls the Display method in class A it is not overridden in B or C
