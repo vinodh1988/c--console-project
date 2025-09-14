@@ -1,7 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Consoleapp;
-using ConsoleApp;
+
+//IProcess process=new IProcess(); //error - no object possible for interface
+
+IProcess process=new Testing();
+process.Execute();
+//process.RunTests();  //interface method only can be called
+process=new Coding();
+process.Execute();
+process = new Document();
+process.Execute();
+/*using ConsoleApp;
 
 Shape s = new Rectangle("MyRectangle", 5, 10);
 s.Show();
